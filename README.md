@@ -1,17 +1,16 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# pdsnd github: Bike Share Data Analysis & Poof of Github Knowledge
 
 ### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
+22nd of September 2025
 
 ### Description
-Describe what your project is about and what it does
+This project analyzes the usage of bike sharing services in new york, chicago and washington based on user input. Additionally, this repository is created to practice and proof the proper usage of git commands and github. 
 
 ### Files used
-Include the files used
+* bikeshare.py
+* data files as input: chicago.csv, new_york_city.csv, washington.csv
+* README.md
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The project setup is forked from: https://github.com/udacity/pdsnd_github 
 
