@@ -85,7 +85,7 @@ def time_stats(df):
         popular_month = df['month'].mode()[0]
         print("\nThe most common month of travel is {}.\n".format(popular_month))
     else: 
-        print("\nThere is only one month selected. So the most common month of travel is {}.".format(df['month'].nunique()))
+        print("\nThere is only one month that you selected. Hence that month is the most common month of travel. This month and the most common month of travel is {}.".format(df['month'].nunique()))
 
     # TO DO: display the most common day of week
     # as this only makes sense if the month are set to all: 
@@ -93,7 +93,7 @@ def time_stats(df):
         popular_day = df['day_of_week'].mode()[0]
         print("\nThe most common day of travel is {}.\n".format(popular_day))
     else: 
-        print("\nThere is only one weekday selected. So the most common day of travel is {}.".format(df['day_of_week'].nunique()))     
+        print("\nThere is only one weekday that you selected. Hence, that is the most common day of travel. The day you chose and most common day of travel is {}.".format(df['day_of_week'].nunique()))     
 
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
@@ -111,16 +111,16 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    popular_start_station = df['Start Station'].mode()[0]
-    print("\nThe most common start station for the travel is {}.\n".format(popular_start_station))
+    common_start_station = df['Start Station'].mode()[0]
+    print("\nThe most common start station for the travel is {}.\n".format(common_start_station))
 
     # TO DO: display most commonly used end station
-    popular_end_station = df['End Station'].mode()[0]
-    print("\nThe most common end station for the travel is {}.\n".format(popular_end_station))
+    common_end_station = df['End Station'].mode()[0]
+    print("\nThe most common end station for the travel is {}.\n".format(common_end_station))
 
     # TO DO: display most frequent combination of start station and end station trip
-    popular_trip = df.groupby(['Start Station', 'End Station']).size().idxmax()
-    print("\nThe most common trip (i.e. combination of start and end station) for the travel is {}.\n".format(popular_trip))
+    common_trip = df.groupby(['Start Station', 'End Station']).size().idxmax()
+    print("\nThe most common trip (i.e. combination of start and end station) for the travel is {}.\n".format(common_trip))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
