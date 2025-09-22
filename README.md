@@ -12,5 +12,5 @@ This project analyzes the usage of bike sharing services in new york, chicago an
 * README.md
 
 ### Credits
-The project setup is forked from: https://github.com/udacity/pdsnd_github 
+The project setup is forked from: https://github.com/udacity/pdsnd_github. Obviously the udacity course _Programming for Data Science in Python_ got me to work on this project.
 
