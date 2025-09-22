@@ -1,4 +1,4 @@
-# pdsnd github: Bike Share Data Analysis & Poof of Github Knowledge
+# pdsnd github: Bike Share Data Analysis & Proof of Github Knowledge
 
 ### Date created
 22nd of September 2025
